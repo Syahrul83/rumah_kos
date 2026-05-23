@@ -2,7 +2,8 @@
 
 **Stack:** Next.js 16 + TypeScript + Supabase + Midtrans + Tailwind v4
 **Start:** 23-05-2026
-**Target:** 16 Phase, 95+ Tasks
+**Today:** 23-05-2026 (Sesi 1-2)
+**Target:** 16 Phase, 95+ Tasks | **Progress: 50% (8/16 Phase)**
 
 ---
 
