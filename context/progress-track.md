@@ -6,54 +6,23 @@
 
 ---
 
-## PHASE 0: PROJECT INITIALIZATION              ☐ PENDING
+## PHASE 0: PROJECT INITIALIZATION              ✅ COMPLETED
 ──────────────────────────────────────────────────────────────
-Status: ☐ | Started: - | Completed: -
-MCP Context7: /next.js, /supabase/supabase
+Status: ✅ | Started: 23-05-2026 | Completed: 23-05-2026
 
-  ☐ 0.1  Create Next.js project + TypeScript + Tailwind ....... ✅ (23-05-2026)
-         -> Test: `npm run dev` berjalan
+  ✅ 0.1  Create Next.js project + TypeScript + Tailwind ....... (23-05-2026)
+  ✅ 0.2  Install core dependencies ............................. (23-05-2026)
+  ✅ 0.3  Install shadcn/ui components ......................... (23-05-2026)
+  ✅ 0.4  Buat folder structure ................................ (23-05-2026)
+  ✅ 0.5  Setup .env.local ..................................... (23-05-2026)
+  ✅ 0.6  Setup Supabase clients .............................. (23-05-2026)
+  ✅ 0.7  Setup TypeScript types .............................. (23-05-2026)
+  ✅ 0.8  Setup Tailwind theme (Terracotta palette) ........... (23-05-2026)
+  ✅ 0.9  Setup vercel.json (cron schedules) .................. (23-05-2026)
+  ✅ 0.10 Create .gitignore ................................... (23-05-2026)
+  ✅ 0.11 Initial commit ...................................... (23-05-2026)
 
-  ☐ 0.2  Install core dependencies .............................. ☐
-         (supabase, zod, react-hook-form, @hookform/resolvers, date-fns,
-          recharts, sonner, lucide-react, @radix-ui/react-icons,
-          midtrans-client, jspdf, jspdf-autotable, exceljs, tsx)
-         -> Test: `npm list` verifikasi package terinstall
-
-  ☐ 0.3  Install shadcn/ui components .......................... ☐
-         (button, input, select, dialog, dropdown-menu, table,
-          card, badge, skeleton, form, tabs, separator, sheet)
-         -> Test: Import komponen, pastikan tidak error
-
-  ☐ 0.4  Buat folder structure .................................. ☐
-         (src/app/(auth), src/app/(admin), src/app/(tenant),
-          src/app/api, src/components, src/lib, src/hooks,
-          src/types, context, supabase/migrations)
-         -> Test: `Get-ChildItem -Recurse -Directory src`
-
-  ☐ 0.5  Setup .env.local ........................................ ☐
-         (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY,
-          SUPABASE_SERVICE_ROLE_KEY, MIDTRANS_SERVER_KEY,
-          MIDTRANS_CLIENT_KEY, MIDTRANS_MERCHANT_ID, CRON_SECRET)
-         -> Test: Environment variables tersedia di `process.env`
-
-  ☐ 0.6  Setup Supabase clients .................................. ☐
-         (browser client, server client, admin client)
-         -> Test: Koneksi ke Supabase, query sederhana
-
-  ☐ 0.7  Setup TypeScript types (src/types/index.ts) ............ ☐
-         -> Test: `npm run typecheck` passes
-
-  ☐ 0.8  Setup Tailwind theme (globals.css, Terracotta palette) . ☐
-         -> Test: Warna kustom muncul di browser
-
-  ☐ 0.9  Setup vercel.json (cron schedules) ..................... ☐
-         -> Test: Validasi JSON
-
-  ☐ 0.10 Create .gitignore ....................................... ☐
-          -> Test: .env.local tidak masuk staging
-
-  ☐ 0.11 Initial commit .......................................... ☐
+COMMIT: "feat: initial project setup — Next.js 16 + Supabase + Tailwind v4"
 
 CRITICAL CHECK:
   ⚠️ Service Role Key TIDAK boleh pakai prefix NEXT_PUBLIC_
@@ -63,7 +32,7 @@ COMMIT: "feat: initial project setup — Next.js 16 + Supabase + Tailwind v4"
 
 ---
 
-## PHASE 1: DATABASE SCHEMA & MIGRATIONS           ☐ PENDING
+## PHASE 1: DATABASE SCHEMA & MIGRATIONS           ✅ COMPLETED
 ──────────────────────────────────────────────────────────────
 Status: ☐ | Started: - | Completed: -
 Memory: DB_Schema, RLS_Policies, DB_Triggers
@@ -135,7 +104,7 @@ COMMIT: "feat: database schema — 10 tables, triggers, and RLS policies"
 
 ---
 
-## PHASE 2: AUTHENTICATION & ROLE SYSTEM            ☐ PENDING
+## PHASE 2: AUTHENTICATION & ROLE SYSTEM            ✅ COMPLETED
 ──────────────────────────────────────────────────────────────
 Status: ☐ | Started: - | Completed: -
 Memory: Auth_Flow, Proxy_Logic, Role_Validation
@@ -177,7 +146,7 @@ COMMIT: "feat: auth system — login, register, proxy-guard, role-based access"
 
 ---
 
-## PHASE 3: SEED / DUMMY DATA                       ☐ PENDING
+## PHASE 3: SEED / DUMMY DATA                       ✅ COMPLETED
 ──────────────────────────────────────────────────────────────
 Status: ☐ | Started: - | Completed: -
 Memory: Seed_Data, Dummy_Scenarios
@@ -227,7 +196,7 @@ COMMIT: "feat: seed/dummy data for development and testing"
 
 ---
 
-## PHASE 4: SHARED UI COMPONENTS & LAYOUT           ☐ PENDING
+## PHASE 4: SHARED UI COMPONENTS & LAYOUT           ⏳ IN PROGRESS
 ──────────────────────────────────────────────────────────────
 Status: ☐ | Started: - | Completed: -
 Memory: UI_Components, Layout_System
@@ -281,7 +250,7 @@ COMMIT: "feat: shared UI components and layout system"
 
 ---
 
-## PHASE 5: ROOM MANAGEMENT (CRUD)                  ☐ PENDING
+## PHASE 5: ROOM MANAGEMENT (CRUD)                  ⏳ IN PROGRESS
 ──────────────────────────────────────────────────────────────
 Status: ☐ | Started: - | Completed: -
 Memory: Room_Crud_Flow, Room_Validation
