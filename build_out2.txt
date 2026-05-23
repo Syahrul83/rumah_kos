@@ -1,0 +1,26 @@
+﻿Γû▓ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.1s
+  Running TypeScript ...
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Failed to type check.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/lib/validators/room-schema.ts:11:15
+Type error: Object literal may only specify known properties, and 'invalid_type_error' does not exist in type '{ error?
+: string | $ZodErrorMap<$ZodIssueInvalidType<unknown>> | undefined; message?: string | undefined; }'.
+
+  [90m 9 |[0m     .trim(),
+  [90m10 |[0m   floor: z
+[31m[1m>[0m [90m11 |[0m     .number({ invalid_type_error: [32m"Lantai harus angka"[0m })
+  [90m   |[0m               [31m[1m^[0m
+  [90m12 |[0m     .int([32m"Harus bilangan bulat"[0m)
+  [90m13 |[0m     .min([35m1[0m, [32m"Minimal lantai 1"[0m)
+  [90m14 |[0m     .max([35m100[0m, [32m"Maksimal lantai 100"[0m),
+Next.js build worker exited with code: 1 and signal: null
