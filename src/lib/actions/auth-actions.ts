@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/client";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 const loginSchema = z.object({
   email: z.string().email("Email tidak valid").trim(),
@@ -101,6 +102,19 @@ export async function register(
       },
     },
   });
+
+  if (!error) {
+    try {
+      const adminClient = createAdminClient();
+      const { data: users } = await adminClient.auth.admin.listUsers();
+      const user = users?.users?.find((u: any) => u.email === validated.data.email);
+      if (user && !user.email_confirmed_at) {
+        await adminClient.auth.admin.updateUserById(user.id, { email_confirm: true });
+      }
+    } catch {
+      // Silently ignore
+    }
+  }
 
   if (error) {
     if (error.message.includes("already")) {

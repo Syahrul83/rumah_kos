@@ -76,9 +76,9 @@ async function main() {
   console.log("  Creating auth users...");
   const defaultPassword = process.env.SEED_PASSWORD || "Admin123!";
   const users = [
-    { email: "superadmin@kost.com", password: defaultPassword, options: { data: { full_name: "Super Admin" } } },
-    { email: "admin@kost.com", password: defaultPassword, options: { data: { full_name: "Admin Budi" } } },
-    { email: "penghuni@kost.com", password: defaultPassword, options: { data: { full_name: "Andi Pratama" } } },
+    { email: "superadmin@kost.com", password: defaultPassword, email_confirm: true, options: { data: { full_name: "Super Admin" } } },
+    { email: "admin@kost.com", password: defaultPassword, email_confirm: true, options: { data: { full_name: "Admin Budi" } } },
+    { email: "penghuni@kost.com", password: defaultPassword, email_confirm: true, options: { data: { full_name: "Andi Pratama" } } },
   ];
 
   const userIds: string[] = [];
