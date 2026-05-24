@@ -59,7 +59,6 @@ export default async function TenantsPage({ searchParams }: TenantsPageProps) {
                 name="status"
                 defaultValue={filterStatus}
                 className="px-3 py-2 rounded-lg border border-input bg-background text-sm"
-                onChange={(e) => e.currentTarget.form?.submit()}
               >
                 <option value="">Semua Status</option>
                 <option value="aktif">Aktif</option>
